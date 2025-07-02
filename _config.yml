@@ -1,18 +1,18 @@
 # Site settings
-title: "Hoite - Digital Professional"
-description: "Personal website and digital business card"
+title: "Hoite Prins"
+description: "Hoite"
 url: "https://hoite.github.io"
 baseurl: ""
 
 # Personal information
 author:
-  name: "Your Name"
-  email: "your.email@example.com"
-  bio: "Your professional bio goes here"
-  location: "Your Location"
-  linkedin: "your-linkedin-username"
+  name: "Hoite Prins"
+  email: "hoite.prins@gmail.com"
+  bio: "Docent ICT, Nerd"
+  location: "Zwolle, Netherlands"
+  linkedin: "hoite-prins"
   github: "hoite"
-  twitter: "your-twitter-handle"  # optional
+  twitter: "hoite89"  # optional
 
 # Build settings
 markdown: kramdown
@@ -45,4 +45,4 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Your Name"
+      author: "Hoite"

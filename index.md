@@ -9,11 +9,10 @@ title: "Professional Digital Business Card"
             <!-- Replace with your actual photo -->
             <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Your Name" class="profile-image">
             
-            <h1 class="hero-title">Your Name</h1>
-            <p class="hero-subtitle">Your Professional Title</p>
+            <h1 class="hero-title">Hoite Prins</h1>
+            <p class="hero-subtitle">Docent ICT || Nerd</p>
             <p class="hero-description">
-                Brief professional bio that highlights your expertise, passion, and what makes you unique. 
-                This should be 2-3 sentences that give visitors a quick understanding of who you are professionally.
+                I'm a passionate ICT educator at Alfa-college with a strong focus on practical, hands-on learning. With expertise in cybersecurity, system administration, and software development, I help students build real-world skills for today’s tech landscape. I thrive on bridging the gap between theory and practice, making complex topics accessible and engaging.
             </p>
             
             <div class="cta-buttons">
@@ -38,57 +37,32 @@ title: "Professional Digital Business Card"
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <h3 class="experience-title">Your Current Role</h3>
-                        <p class="experience-company">Company Name</p>
+                        <h3 class="experience-title">ICT Docent (ICT Lecturer)</h3>
+                        <p class="experience-company">Alfa-college</p>
                     </div>
-                    <span class="experience-period">2020 - Present</span>
+                    <span class="experience-period">2015 - Present</span>
                 </div>
                 <p class="experience-description">
-                    Brief description of your role, key responsibilities, and major achievements. 
-                    Focus on impact and results you've delivered.
+                    Teaching and mentoring students in various ICT disciplines with a focus on practical, hands-on learning. 
+                    Developed and implemented the "Excellentietraject Cybersecurity" program to provide advanced cybersecurity training. 
+                    Bridging the gap between theoretical knowledge and real-world applications to prepare students for today's tech industry.
                 </p>
                 <div class="experience-skills">
-                    <span class="skill-tag">Skill 1</span>
-                    <span class="skill-tag">Skill 2</span>
-                    <span class="skill-tag">Skill 3</span>
-                    <span class="skill-tag">Skill 4</span>
+                    <strong style="color: var(--text-primary); font-size: 0.9rem;">IT Expertise:</strong><br>
+                    <span class="skill-tag">Cybersecurity</span>
+                    <span class="skill-tag">DevOps</span>
+                    <span class="skill-tag">Software Development</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Networking</span>
                 </div>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="experience-title">Previous Role</h3>
-                        <p class="experience-company">Previous Company</p>
-                    </div>
-                    <span class="experience-period">2018 - 2020</span>
+                <div class="experience-skills" style="margin-top: 1rem;">
+                    <strong style="color: var(--text-primary); font-size: 0.9rem;">Educational Roles:</strong><br>
+                    <span class="skill-tag">Curriculum Development</span>
+                    <span class="skill-tag">Chair of Exam Board (2021-Present)</span>
                 </div>
-                <p class="experience-description">
-                    Description of your previous role and key accomplishments. 
-                    Highlight growth, learning, and value you added to the organization.
-                </p>
-                <div class="experience-skills">
-                    <span class="skill-tag">Skill A</span>
-                    <span class="skill-tag">Skill B</span>
-                    <span class="skill-tag">Skill C</span>
-                </div>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="experience-title">Earlier Role</h3>
-                        <p class="experience-company">Another Company</p>
-                    </div>
-                    <span class="experience-period">2016 - 2018</span>
-                </div>
-                <p class="experience-description">
-                    Earlier career experience that shows your professional journey. 
-                    Focus on how this role built the foundation for your current expertise.
-                </p>
-                <div class="experience-skills">
-                    <span class="skill-tag">Foundation Skill 1</span>
-                    <span class="skill-tag">Foundation Skill 2</span>
+                <div class="experience-skills" style="margin-top: 1rem;">
+                    <strong style="color: var(--text-primary); font-size: 0.9rem;">Key Projects:</strong><br>
+                    <span class="skill-tag">Excellentietraject Cybersecurity</span>
                 </div>
             </div>
         </div>
