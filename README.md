@@ -11,58 +11,6 @@ A modern, professional personal website and digital business card built with Jek
 🚀 **Fast & Secure**: Hosted on GitHub Pages with automatic HTTPS  
 🔧 **Easy to Customize**: Simple configuration and content management  
 
-## Getting Started
-
-### 1. Customize Your Information
-
-Edit `_config.yml` to update your personal information:
-
-```yaml
-title: "Your Name - Digital Professional"
-author:
-  name: "Your Name"
-  email: "your.email@example.com"
-  bio: "Your professional bio"
-  location: "Your Location"
-  linkedin: "your-linkedin-username"
-  github: "hoite"
-```
-
-### 2. Add Your Profile Photo
-
-- Add your professional headshot as `assets/images/profile.jpg`
-- Recommended size: 400x400 pixels or larger, square aspect ratio
-- The image will be automatically resized and styled
-
-### 3. Update Your Experience
-
-Edit `index.md` to update the experience section with your actual:
-- Job titles and companies
-- Employment dates
-- Role descriptions
-- Skills and technologies
-
-### 4. Customize Content
-
-- Update the hero section with your name, title, and bio
-- Modify the contact information
-- Add or remove social media links as needed
-
-### 5. Write Blog Posts
-
-Create new blog posts in the `_posts` directory with the naming convention:
-`YYYY-MM-DD-title-of-post.md`
-
-Each post should include frontmatter:
-```yaml
----
-layout: post
-title: "Your Post Title"
-date: YYYY-MM-DD
-author: "Your Name"
-tags: ["tag1", "tag2"]
----
-```
 
 ## Local Development
 
@@ -110,5 +58,3 @@ For GitHub Pages documentation, visit: https://docs.github.com/en/pages
 This template is open source and available under the MIT License. Feel free to customize it for your own use!
 
 ---
-
-**Ready to make it yours?** Start by editing `_config.yml` and `index.md` with your information!
