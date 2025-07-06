@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Professional Digital Business Card"
+title: "Hoite Prins"
 ---
 
 <section class="hero">
