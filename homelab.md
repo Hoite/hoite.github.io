@@ -54,7 +54,13 @@ permalink: /homelab/
                         <td>Proxmox hypervisor</td>
                     </tr>
                     <tr>
-                        <td><code>bare1</code></td>
+                        <td><code>bare-metal1</code></td>
+                        <td>Dell Optiplex 3080</td>
+                        <td>16 GB</td>
+                        <td>Bare-metal Talos worker</td>
+                    </tr>
+                    <tr>
+                        <td><code>bare-metal2</code></td>
                         <td>Dell Optiplex 3080</td>
                         <td>16 GB</td>
                         <td>Bare-metal Talos worker</td>
@@ -69,7 +75,7 @@ permalink: /homelab/
             </table>
         </div>
 
-        <h3 class="homelab-subsection-title">Proxmox VMs</h3>
+        <h3 class="homelab-subsection-title">Nodes</h3>
         <div class="table-wrapper">
             <table class="homelab-table">
                 <thead>
@@ -131,13 +137,13 @@ permalink: /homelab/
                     </tr>
                     <tr>
                         <td><code>talos-worker-4</code></td>
-                        <td>bare1</td>
+                        <td>bare-metal1</td>
                         <td>16 GB</td>
                         <td>Kubernetes worker (bare-metal)</td>
                     </tr>
                     <tr>
                         <td><code>talos-worker-5</code></td>
-                        <td>bare-metal</td>
+                        <td>bare-metal2</td>
                         <td>16 GB</td>
                         <td>Kubernetes worker (bare-metal)</td>
                     </tr>
