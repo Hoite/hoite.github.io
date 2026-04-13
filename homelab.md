@@ -84,13 +84,13 @@ permalink: /homelab/
                     <tr>
                         <td><code>plex</code></td>
                         <td>pve1</td>
-                        <td>2 GB</td>
+                        <td>6 GB</td>
                         <td>Plex Media Server (GPU passthrough)</td>
                     </tr>
                     <tr>
                         <td><code>homeassistant</code></td>
                         <td>pve1</td>
-                        <td>2 GB</td>
+                        <td>4 GB</td>
                         <td>Home Assistant (Zigbee passthrough)</td>
                     </tr>
                     <tr>
@@ -102,7 +102,7 @@ permalink: /homelab/
                     <tr>
                         <td><code>talos-control-plane-2</code></td>
                         <td>pve1</td>
-                        <td>4 GB</td>
+                        <td>2 GB</td>
                         <td>Kubernetes control-plane</td>
                     </tr>
                     <tr>
@@ -114,13 +114,13 @@ permalink: /homelab/
                     <tr>
                         <td><code>talos-worker-1</code></td>
                         <td>pve2</td>
-                        <td>2 GB</td>
+                        <td>16 GB</td>
                         <td>Kubernetes worker</td>
                     </tr>
                     <tr>
                         <td><code>talos-worker-2</code></td>
                         <td>pve1</td>
-                        <td>4 GB</td>
+                        <td>16 GB</td>
                         <td>Kubernetes worker</td>
                     </tr>
                     <tr>
@@ -132,6 +132,12 @@ permalink: /homelab/
                     <tr>
                         <td><code>talos-worker-4</code></td>
                         <td>bare1</td>
+                        <td>16 GB</td>
+                        <td>Kubernetes worker (bare-metal)</td>
+                    </tr>
+                    <tr>
+                        <td><code>talos-worker-5</code></td>
+                        <td>bare-metal</td>
                         <td>16 GB</td>
                         <td>Kubernetes worker (bare-metal)</td>
                     </tr>
@@ -325,6 +331,10 @@ permalink: /homelab/
                     <tr>
                         <td><strong>Recyclarr</strong></td>
                         <td>Syncs TRaSH Guides quality profiles to Radarr and Sonarr — runs nightly as a CronJob</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Profilarr</strong></td>
+                        <td>Imports and syncs custom formats and quality profiles from TRaSH Guides to Radarr and Sonarr</td>
                     </tr>
                     <tr>
                         <td><strong>Calibre Web Automated</strong></td>
