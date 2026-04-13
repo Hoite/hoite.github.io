@@ -409,7 +409,7 @@ permalink: /homelab/
             </div>
             <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
             <div class="flow-node">
-                <div class="flow-node-icon"><i class="fas fa-tunnel"></i></div>
+                <div class="flow-node-icon"><i class="fas fa-right-left"></i></div>
                 <div class="flow-node-label">Cloudflared<small>encrypted tunnel</small></div>
             </div>
             <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
