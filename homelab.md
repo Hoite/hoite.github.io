@@ -119,13 +119,13 @@ permalink: /homelab/
                     </tr>
                     <tr>
                         <td><code>talos-worker-1</code></td>
-                        <td>pve2</td>
+                        <td>pve3</td>
                         <td>16 GB</td>
                         <td>Kubernetes worker</td>
                     </tr>
                     <tr>
                         <td><code>talos-worker-2</code></td>
-                        <td>pve1</td>
+                        <td>pve3</td>
                         <td>16 GB</td>
                         <td>Kubernetes worker</td>
                     </tr>
