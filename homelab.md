@@ -196,6 +196,129 @@ permalink: /homelab/
 <section class="homelab-section homelab-section-alt">
     <div class="container">
         <h2 class="homelab-section-title">
+            <i class="fas fa-memory"></i> Kubernetes Cluster RAM
+        </h2>
+
+        <div class="ram-stats">
+            <div class="ram-stat-card">
+                <div class="ram-stat-value">90 GB</div>
+                <div class="ram-stat-label">Total cluster RAM</div>
+            </div>
+            <div class="ram-stat-card">
+                <div class="ram-stat-value">8</div>
+                <div class="ram-stat-label">Nodes</div>
+            </div>
+            <div class="ram-stat-card">
+                <div class="ram-stat-value">80 GB</div>
+                <div class="ram-stat-label">Worker capacity</div>
+            </div>
+            <div class="ram-stat-card">
+                <div class="ram-stat-value">10 GB</div>
+                <div class="ram-stat-label">Control-plane capacity</div>
+            </div>
+        </div>
+
+        <div class="ram-chart">
+            <div class="ram-chart-legend">
+                <span class="ram-legend-item ram-legend-cp"><i class="fas fa-circle"></i> Control-plane</span>
+                <span class="ram-legend-item ram-legend-worker"><i class="fas fa-circle"></i> Worker (VM)</span>
+                <span class="ram-legend-item ram-legend-bare"><i class="fas fa-circle"></i> Worker (bare-metal)</span>
+            </div>
+
+            <div class="ram-row">
+                <span class="ram-label"><code>talos-control-plane-1</code></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-cp" style="width: 25%">4 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>talos-control-plane-2</code></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-cp" style="width: 12.5%">2 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>talos-control-plane-3</code></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-cp" style="width: 25%">4 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>talos-worker-1</code></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-worker" style="width: 100%">16 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>talos-worker-2</code></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-worker" style="width: 100%">16 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>talos-worker-3</code></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-worker" style="width: 100%">16 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>talos-worker-4</code></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-bare" style="width: 100%">16 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>talos-worker-5</code></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-bare" style="width: 100%">16 GB</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="homelab-subsection-title" style="margin-top: 2.5rem;">Physical host allocation</h3>
+        <div class="ram-chart">
+            <div class="ram-chart-legend">
+                <span class="ram-legend-item" style="color: var(--text-secondary)"><i class="fas fa-circle" style="color: #2563eb"></i> Allocated</span>
+                <span class="ram-legend-item" style="color: var(--text-secondary)"><i class="fas fa-circle" style="color: var(--border-color)"></i> Available</span>
+            </div>
+
+            <div class="ram-row">
+                <span class="ram-label"><code>pve1</code> <small>16 GB</small></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-worker" style="width: 75%">12 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>pve2</code> <small>8 GB</small></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-worker" style="width: 50%">4 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>pve3</code> <small>64 GB</small></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-worker" style="width: 81.25%">52 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>bare-metal1</code> <small>16 GB</small></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-bare" style="width: 100%">16 GB</div>
+                </div>
+            </div>
+            <div class="ram-row">
+                <span class="ram-label"><code>bare-metal2</code> <small>16 GB</small></span>
+                <div class="ram-bar-track">
+                    <div class="ram-bar ram-bar-bare" style="width: 100%">16 GB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="homelab-section">
+    <div class="container">
+        <h2 class="homelab-section-title">
             <i class="fas fa-dharmachakra"></i> Kubernetes Cluster
         </h2>
 
@@ -229,6 +352,103 @@ permalink: /homelab/
                 <div class="homelab-card-icon"><i class="fas fa-database"></i></div>
                 <h4>Storage</h4>
                 <p>democratic-csi with NFS<br><small>Synology DS2415+</small></p>
+            </div>
+        </div>
+
+        <h3 class="homelab-subsection-title" style="margin-top: 2.5rem;">GitOps flow</h3>
+        <div class="flow-diagram">
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-code"></i></div>
+                <div class="flow-node-label">Git push</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fab fa-github"></i></div>
+                <div class="flow-node-label">GitHub</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-sync-alt"></i></div>
+                <div class="flow-node-label">FluxCD<small>polls every 10m</small></div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-lock-open"></i></div>
+                <div class="flow-node-label">SOPS decrypt<small>Age key</small></div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-dharmachakra"></i></div>
+                <div class="flow-node-label">Kubernetes API</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node flow-node-end">
+                <div class="flow-node-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="flow-node-label">Deployed</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="homelab-section homelab-section-alt">
+    <div class="container">
+        <h2 class="homelab-section-title">
+            <i class="fas fa-project-diagram"></i> Architecture
+        </h2>
+
+        <h3 class="homelab-subsection-title">External traffic</h3>
+        <div class="flow-diagram">
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-globe"></i></div>
+                <div class="flow-node-label">Internet</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-cloud"></i></div>
+                <div class="flow-node-label">Cloudflare<small>DNS + proxy</small></div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-tunnel"></i></div>
+                <div class="flow-node-label">Cloudflared<small>encrypted tunnel</small></div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="flow-node-label">Cilium Ingress<small>10.0.80.101</small></div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node flow-node-end">
+                <div class="flow-node-icon"><i class="fas fa-th-large"></i></div>
+                <div class="flow-node-label">App</div>
+            </div>
+        </div>
+
+        <h3 class="homelab-subsection-title">Internal DNS resolution</h3>
+        <div class="flow-diagram">
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-laptop"></i></div>
+                <div class="flow-node-label">Device</div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="flow-node-label">AdGuard DNS<small>via DHCP</small></div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="flow-node-label">*.hoite.nl<small>ExternalDNS record</small></div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node">
+                <div class="flow-node-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="flow-node-label">Cilium Ingress<small>10.0.80.101</small></div>
+            </div>
+            <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="flow-node flow-node-end">
+                <div class="flow-node-icon"><i class="fas fa-th-large"></i></div>
+                <div class="flow-node-label">App</div>
             </div>
         </div>
     </div>

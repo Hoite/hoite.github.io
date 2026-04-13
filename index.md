@@ -24,6 +24,10 @@ title: "Hoite Prins"
                     <i class="fas fa-blog"></i>
                     Read My Blog
                 </a>
+                <a href="/homelab" class="btn btn-secondary">
+                    <i class="fas fa-server"></i>
+                    My Homelab
+                </a>
             </div>
         </div>
     </div>

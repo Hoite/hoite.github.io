@@ -773,6 +773,180 @@ body {
     font-weight: 400;
 }
 
+/* RAM overview section */
+.ram-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.ram-stat-card {
+    background: var(--background);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.ram-stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.ram-stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ram-chart-legend {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+    font-size: 0.85rem;
+}
+
+.ram-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.ram-legend-cp i    { color: #6366f1; }
+.ram-legend-worker i { color: #2563eb; }
+.ram-legend-bare i  { color: #0891b2; }
+
+.ram-row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.ram-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.ram-label code {
+    background: var(--background);
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+}
+
+.ram-bar-track {
+    background: var(--border-color);
+    border-radius: 1rem;
+    height: 1.75rem;
+    overflow: hidden;
+}
+
+.ram-bar {
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    min-width: 2.5rem;
+    transition: width 0.6s ease;
+}
+
+.ram-bar-cp     { background: #6366f1; }
+.ram-bar-worker { background: #2563eb; }
+.ram-bar-bare   { background: #0891b2; }
+
+/* Flow diagrams */
+.flow-diagram {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.flow-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    min-width: 90px;
+}
+
+.flow-node-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--background-alt);
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.flow-node:hover .flow-node-icon {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.flow-node-end .flow-node-icon {
+    background: #dcfce7;
+    border-color: #16a34a;
+    color: #16a34a;
+}
+
+.flow-node-end:hover .flow-node-icon {
+    background: #16a34a;
+    color: white;
+}
+
+.flow-node-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+    line-height: 1.3;
+}
+
+.flow-node-label small {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-top: 0.15rem;
+}
+
+.flow-arrow {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .nav-menu {
