@@ -555,10 +555,6 @@ permalink: /homelab/
                         <td>TV series collection management</td>
                     </tr>
                     <tr>
-                        <td><strong>Recyclarr</strong></td>
-                        <td>Syncs TRaSH Guides quality profiles to Radarr and Sonarr — runs nightly as a CronJob</td>
-                    </tr>
-                    <tr>
                         <td><strong>Profilarr</strong></td>
                         <td>Imports and syncs custom formats and quality profiles from TRaSH Guides to Radarr and Sonarr</td>
                     </tr>
