@@ -559,6 +559,22 @@ permalink: /homelab/
                         <td>Imports and syncs custom formats and quality profiles from TRaSH Guides to Radarr and Sonarr</td>
                     </tr>
                     <tr>
+                        <td><strong>Bazarr</strong></td>
+                        <td>Automatic subtitle downloading for Sonarr and Radarr</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Audiobookshelf</strong></td>
+                        <td>Self-hosted audiobook and podcast server</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tautulli</strong></td>
+                        <td>Plex analytics and monitoring</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Seerr</strong></td>
+                        <td>Media request and discovery management for Plex</td>
+                    </tr>
+                    <tr>
                         <td><strong>Calibre Web Automated</strong></td>
                         <td>E-book library management with automatic imports</td>
                     </tr>
@@ -583,6 +599,14 @@ permalink: /homelab/
                     <tr>
                         <td><strong>Grafana</strong></td>
                         <td>Metrics visualisation and cluster monitoring dashboards</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uptime Kuma</strong></td>
+                        <td>Self-hosted uptime and availability monitoring</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ntfy</strong></td>
+                        <td>Push notification server for Flux and other cluster alerts</td>
                     </tr>
                 </tbody>
             </table>
