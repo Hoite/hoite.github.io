@@ -322,6 +322,26 @@ body {
     font-size: 0.9rem;
 }
 
+.blog-card-tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.blog-list .blog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    margin-top: 2rem;
+}
+
+.blog-list .blog-card-title {
+    font-size: 1.4rem;
+}
+
+.blog-list .blog-card-content {
+    padding: 2rem;
+}
+
 /* Contact section */
 .contact {
     padding: 4rem 0;
